@@ -1,0 +1,465 @@
+Belajar JS
+-------------------------
+<body>
+    <h1>Belajar JS Hello World</h1>
+
+    <div id="nama">Workshop 4 Days</div>
+    <div id="lokasi">Online</div>
+
+    <!-- ini kedua -->
+    <script>
+        //deklarasi variabel & assign value
+        var nama = "Workshop 4 Days";
+        var lokasi = "Online";
+        //sblm menggunakan variabel
+        document.getElementById("nama").innerHTML = nama;
+        document.getElementById("nama").innerHTML += "<br>Hello";
+
+        // udh menggunakan variabel
+        var dataNama = document.getElementById("nama")
+        dataNama.innerHTML += "<br>Arif";
+        dataNama.innerHTML += "<br>Arif";
+        dataNama.innerHTML += "<br>Arif";
+        document.getElementById("lokasi").innerHTML = lokasi;
+
+        // penggunaan \n > untuk console
+        // penggunaan <br> > untuk html/document
+        console.log("Hello World\n\nArif");
+    </script>
+</body>
+--------------------------------
+>>>>.  tipe data   .<<<<<<
+<body>
+    <h1>Belajar Tipe Data Number di JS</h1>
+
+    <!-- output -->
+    <div id="hasil"></div>
+
+    <script>
+        // angka/number
+        var angka = 80
+        var kalimat = "Belajar JS di Workshop WFDB"
+        var transport = ["Mobil", "Motor", "Pesawat", "Kapal"]
+        var manusia = {
+            nama: "Arif",
+            asal: "Indonesia",
+            usia: 30,
+        }
+
+        // deklarasi variabel & assign value
+        var dataHasil = document.getElementById("hasil")
+        // output 1. angka
+        dataHasil.innerHTML = `Data Angka: ${angka}`
+        // output 2. kalimat
+
+        dataHasil.innerHTML += `<br>Data Kalimat: ${kalimat}`
+
+        // output 3. transport
+        // array [] > 0 s.d panjang data (array)
+        // contoh ["Kucing","Burung","Ikan"] > 0, 1, 2
+        // total 3 data
+        var hasilTransport = `Ini Kendaran : ${transport[0]} <br>`
+        dataHasil.innerHTML += `<br>Data Transport: ${transport}<br>${hasilTransport}`
+
+        // output 4. manusia
+        // object {}
+        var hasilManusia = `Nama: ${manusia.nama} <br>
+                            Asal: ${manusia.asal} <br>
+                            Usia: ${manusia.usia} <br>`;
+        dataHasil.innerHTML += `<br>Data Manusia: ${manusia}<br>${hasilManusia}`
+
+    </script>
+</body>
+--------------------------------
+>>>>>.    artimatika    .<<<<<<
+
+<body>
+    <h1>Belajar Operator Aritmatika di JS</h1>
+
+    <div id="penjumalahan"></div>
+    <div id="pengurangan"></div>
+    <div id="perkalian"></div>
+    <div id="pembagian"></div>
+    <div id="modulus"></div>
+
+    <hr>
+    <div id="hasil"></div>
+
+    <script>
+        var bilangan1 = 6
+        var bilangan2 = 2
+
+        var penjumlahan = bilangan1 + bilangan2
+        var pengurangan = bilangan1 - bilangan2
+        var perkalian = bilangan1 * bilangan2
+        var pembagian = bilangan1 / bilangan2
+        var modulus = bilangan1 % bilangan2
+
+        document.getElementById("penjumalahan").innerHTML = `Penjumlahan ${bilangan1} + ${bilangan2} = ${penjumlahan}`
+        document.getElementById("pengurangan").innerHTML = `Pengurangan ${bilangan1} - ${bilangan2} = ${pengurangan}`
+        document.getElementById("perkalian").innerHTML = `Perkalian ${bilangan1} * ${bilangan2} = ${perkalian}`
+        document.getElementById("pembagian").innerHTML = `Pembagian ${bilangan1} / ${bilangan2} = ${pembagian}`
+        document.getElementById("modulus").innerHTML = `Modulus ${bilangan1} % ${bilangan2} = ${modulus}`
+
+
+        // contoh function
+        document.getElementById("hasil").innerHTML = `Contoh Function Hasil: ${hitung("tambah")}`
+
+        //function hitungan dengan 1 parameter kondisi (tambah, kurang, kali, bagi, modulus)
+        function hitung(kondisi) {
+            var bilangan1 = 5
+            var bilangan2 = 10
+
+            var hasil = 0
+            if (kondisi == "tambah") {
+                hasil = bilangan1 + bilangan2
+            } else if (kondisi == "kurang") {
+                hasil = bilangan1 - bilangan2
+            } else if (kondisi == "kali") {
+                hasil = bilangan1 * bilangan2
+            } else if (kondisi == "bagi") {
+                hasil = bilangan1 / bilangan2
+            } else if (kondisi == "modulus") {
+                hasil = bilangan1 % bilangan2
+            } else {
+                hasil = "Kondisi tidak ditemukan"
+            }
+
+            return hasil
+
+        }
+    </script>
+</body>Belajar JS
+-------------------------
+<body>
+    <h1>Belajar JS Hello World</h1>
+
+    <div id="nama">Workshop 4 Days</div>
+    <div id="lokasi">Online</div>
+
+    <!-- ini kedua -->
+    <script>
+        //deklarasi variabel & assign value
+        var nama = "Workshop 4 Days";
+        var lokasi = "Online";
+        //sblm menggunakan variabel
+        document.getElementById("nama").innerHTML = nama;
+        document.getElementById("nama").innerHTML += "<br>Hello";
+
+        // udh menggunakan variabel
+        var dataNama = document.getElementById("nama")
+        dataNama.innerHTML += "<br>Arif";
+        dataNama.innerHTML += "<br>Arif";
+        dataNama.innerHTML += "<br>Arif";
+        document.getElementById("lokasi").innerHTML = lokasi;
+
+        // penggunaan \n > untuk console
+        // penggunaan <br> > untuk html/document
+        console.log("Hello World\n\nArif");
+    </script>
+</body>
+--------------------------------
+>>>>.  tipe data   .<<<<<<
+<body>
+    <h1>Belajar Tipe Data Number di JS</h1>
+
+    <!-- output -->
+    <div id="hasil"></div>
+
+    <script>
+        // angka/number
+        var angka = 80
+        var kalimat = "Belajar JS di Workshop WFDB"
+        var transport = ["Mobil", "Motor", "Pesawat", "Kapal"]
+        var manusia = {
+            nama: "Arif",
+            asal: "Indonesia",
+            usia: 30,
+        }
+
+        // deklarasi variabel & assign value
+        var dataHasil = document.getElementById("hasil")
+        // output 1. angka
+        dataHasil.innerHTML = `Data Angka: ${angka}`
+        // output 2. kalimat
+
+        dataHasil.innerHTML += `<br>Data Kalimat: ${kalimat}`
+
+        // output 3. transport
+        // array [] > 0 s.d panjang data (array)
+        // contoh ["Kucing","Burung","Ikan"] > 0, 1, 2
+        // total 3 data
+        var hasilTransport = `Ini Kendaran : ${transport[0]} <br>`
+        dataHasil.innerHTML += `<br>Data Transport: ${transport}<br>${hasilTransport}`
+
+        // output 4. manusia
+        // object {}
+        var hasilManusia = `Nama: ${manusia.nama} <br>
+                            Asal: ${manusia.asal} <br>
+                            Usia: ${manusia.usia} <br>`;
+        dataHasil.innerHTML += `<br>Data Manusia: ${manusia}<br>${hasilManusia}`
+
+    </script>
+</body>
+--------------------------------
+>>>>>.    artimatika    .<<<<<<
+
+<body>
+    <h1>Belajar Operator Aritmatika di JS</h1>
+
+    <div id="penjumalahan"></div>
+    <div id="pengurangan"></div>
+    <div id="perkalian"></div>
+    <div id="pembagian"></div>
+    <div id="modulus"></div>
+
+    <hr>
+    <div id="hasil"></div>
+
+    <script>
+        var bilangan1 = 6
+        var bilangan2 = 2
+
+        var penjumlahan = bilangan1 + bilangan2
+        var pengurangan = bilangan1 - bilangan2
+        var perkalian = bilangan1 * bilangan2
+        var pembagian = bilangan1 / bilangan2
+        var modulus = bilangan1 % bilangan2
+
+        document.getElementById("penjumalahan").innerHTML = `Penjumlahan ${bilangan1} + ${bilangan2} = ${penjumlahan}`
+        document.getElementById("pengurangan").innerHTML = `Pengurangan ${bilangan1} - ${bilangan2} = ${pengurangan}`
+        document.getElementById("perkalian").innerHTML = `Perkalian ${bilangan1} * ${bilangan2} = ${perkalian}`
+        document.getElementById("pembagian").innerHTML = `Pembagian ${bilangan1} / ${bilangan2} = ${pembagian}`
+        document.getElementById("modulus").innerHTML = `Modulus ${bilangan1} % ${bilangan2} = ${modulus}`
+
+
+        // contoh function
+        document.getElementById("hasil").innerHTML = `Contoh Function Hasil: ${hitung("tambah")}`
+
+        //function hitungan dengan 1 parameter kondisi (tambah, kurang, kali, bagi, modulus)
+        function hitung(kondisi) {
+            var bilangan1 = 5
+            var bilangan2 = 10
+
+            var hasil = 0
+            if (kondisi == "tambah") {
+                hasil = bilangan1 + bilangan2
+            } else if (kondisi == "kurang") {
+                hasil = bilangan1 - bilangan2
+            } else if (kondisi == "kali") {
+                hasil = bilangan1 * bilangan2
+            } else if (kondisi == "bagi") {
+                hasil = bilangan1 / bilangan2
+            } else if (kondisi == "modulus") {
+                hasil = bilangan1 % bilangan2
+            } else {
+                hasil = "Kondisi tidak ditemukan"
+            }
+
+            return hasil
+
+        }
+    </script>
+</body>
+
+------------------------------------------------------------------------
+>>>>>>>. belajar function 2 .<<<<<<<<<
+
+<body>
+    <h1>Belajar Function di Java Script</h1>
+
+    <div id="nama"></div>
+    <div id="lokasi"></div>
+
+    <script>
+        // deklarasi dan assign
+        var nama = helloNama("Arif","Setiawan");
+        var lokasi = helloLokasi();
+
+        // helloNama();
+        var dataNama = document.getElementById("nama")
+        dataNama.innerHTML = "<br>Hello " + nama;
+
+
+        // log data
+        console.log(typeof (nama)) //ada data / string
+        console.log(typeof (lokasi)) //tidak ada data / undefined   
+
+        //function return (menggunakan 2 parameter)
+        function helloNama(namaDepan, namaBelakang) {
+            return `Nama Depan: ${namaDepan} <br> Nama Belakang: ${namaBelakang}`
+        }
+
+        // dataNama.innerHTML += "<br>Hello " + ;
+        // panggil function 
+        helloLokasi();
+        function helloLokasi() {
+            document.getElementById("lokasi").innerHTML = "Online"
+            // var result = ["A","B","C"]
+            // return result
+        }
+    </script>
+</body>
+
+lanjutan 3 
+----------
+<body>
+  <button onclick="tampilkanNama()">Klik Disini</button>
+  <div id="hasil"></div>
+
+  <script>
+    var nama = helloNama("Arif", "Setiawan");
+
+    function tampilkanNama() {
+    	document.getElementById("hasil").innerHTML = nama
+    }
+
+    function helloNama(namaDepan, namaBelakang) {
+    	return `Nama Depan: ${namaDepan} <br> Nama Belakang: ${namaBelakang}`
+    }
+  </script>
+</body>
+
+>>>>>. belajar hitung grade nilai .<<<<<<<
+------------------------------------------------------------------------
+<body>
+    <h1>Hitung Grade Menggunakan JS</h1>
+
+    <div id="hasil"></div>
+    <script>
+        var dataHasil = document.getElementById("hasil")
+        dataHasil.innerHTML = `Grade: ${hitungGrade(89)}`
+        
+        function hitungGrade(nilai) {
+            let grade// = "Nilai tidak valid"
+            if (nilai >= 90 && nilai <= 100) {
+                grade = "A"
+            } else if (nilai >= 80 && nilai <= 89) {
+                grade = "B"
+            } else if (nilai >= 70 && nilai <= 79) {
+                grade = "C"
+            } else if (nilai >= 60 && nilai <= 69) {
+                grade = "D"
+            } else if (nilai >= 0 && nilai <= 59) {
+                grade = "E"
+            } else {
+                grade = "Nilai tidak valid"
+            }
+
+            return grade
+        }
+    </script>
+</body>
+------------------------------------------------------------------------
+>>>>. Belajar Event .<<<<<
+
+<body>
+    <h1>Belajar Event</h1>
+    <button id="tombol" onclick="ubahText()">Klik Disini</button>
+    <script>
+        function ubahText() {
+            // document.getElementById("tombol").innerHTML = "Halo Yal"
+            // cek Halo Yal di console
+            var data = document.getElementById("tombol").innerHTML
+            console.log(data)
+
+            //kondisi
+            if (data == "Halo Yal") {
+                document.getElementById("tombol").innerHTML = "Klik Disini"
+            } else {
+                document.getElementById("tombol").innerHTML = "Halo Yal"
+            }
+        }
+    </script>
+</body>
+
+------------------------------------------------------------------------
+tugas hitung maju mundur
+
+durasi 10 menit >> 20:50
+<body>
+    <h1>Belajar Hitung Maju Mundur dengan JS</h1>
+    <button onclick="mundur()">Mundur</button>
+    <button onclick="maju()">Maju</button>
+
+    <div id="hasil"></div>
+    <script></script>
+</body>
+
+lanjutan hitung maju mundur
+<body>
+    <h1>Belajar Hitung Maju Mundur dengan JS</h1>
+    <button onclick="mundur()">Mundur</button>
+    <button onclick="maju()">Maju</button>
+
+    <div id="hasil"></div>
+    <script>
+        var hitung = 0
+        var dataHasil = document.getElementById("hasil")
+        dataHasil.innerHTML = `Hasil: ${hitung}`
+        
+        //hitung mundur
+        function mundur() {
+            hitung--
+            dataHasil.innerHTML = `Hasil: ${hitung}`
+        }
+
+        //hitung maju
+        function maju() {
+            hitung++
+            dataHasil.innerHTML = `Hasil: ${hitung}`
+        }
+    </script>
+</body>
+
+
+------------------------------------------------------------------------------------------------
+>>>>>>>. hitung grade menggunakan input .<<<<<<<<
+
+<body>
+    <h1>Cek Grade</h1>
+
+    <form action="">
+        <label for="">Nilai</label>
+        <input type="number" placeholder="Isikan Nilai" required>
+        <button type="submit">Cek Grade</button>
+        <p id="hasil"></p>
+    </form>
+
+    <script>
+        // deklarasi variabel
+        var nilai = 0
+        var grade = ""
+
+        // ambil nilai dari form
+        var dataNilai = document.querySelector("input[type=number]")
+        var dataGrade = document.querySelector("form button")
+
+        // event
+        dataGrade.addEventListener("click", function(e) {
+            e.preventDefault()
+            nilai = dataNilai.value
+            grade = hitungGrade(nilai)
+            document.getElementById("hasil").innerHTML = `Grade: ${grade}`
+        })
+
+        // function
+        function hitungGrade(nilai) {
+            if (nilai >= 90 && nilai <= 100) {
+                grade = "A"
+            } else if (nilai >= 80 && nilai <= 89) {
+                grade = "B"
+            } else if (nilai >= 70 && nilai <= 79) {
+                grade = "C"
+            } else if (nilai >= 60 && nilai <= 69) {
+                grade = "D"
+            } else if (nilai >= 1 && nilai <= 59) {
+                grade = "E"
+            } else {
+                grade = "Nilai tidak valid"
+            }
+
+            return grade
+        }
+    </script>
+</body>
