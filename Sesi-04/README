@@ -1,4 +1,5 @@
 <h1>Belajar Algoritma Nilai</h1>
+
 <script>
     // var bs diubah (diluar scope)
     // let bs diubah (didalam scope)
@@ -12,7 +13,7 @@
         // console.log(result)
     }
     console.log(result)
-q
+
     let index = 1
     const a = index
     console.log(a)
@@ -41,6 +42,7 @@ q
     // else result = "tidak lulus"
     console.log("Data Keterangan : " + result2)
 </script>
+
 ================================================================================================================
 
 <h1>Belajar Membuat JS</h1>
@@ -127,3 +129,5 @@ boleh browsing (present jika udah selesai)
 2. pseudocode (wajib)
 3. koding (optional)
 4. optimize / custom  (optional)
+
+
