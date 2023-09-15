@@ -1,0 +1,182 @@
+
+
+belajar image
+----
+load image local
+<img src="avatar.jpeg" alt="" width="250px" height="250px" />
+
+load image link/online
+<img
+  src="https://sm.ign.com/ign_nordic/cover/a/avatar-gen/avatar-generations_prsz.jpg"
+  alt=""
+  width="250px"
+  height="250px"
+/>
+
+belajar linkf
+-----
+<p>Menuju Online/Internet</p>
+<a href="https://google.com" target="_blank">Klik Disini Untuk Menuju Halaman Google</a>
+
+<p>Menuju Halaman Lain</p>
+
+belajar heading
+------
+untuk kembali ke halaman link
+<a href="../belajar_link/index_link.html">Kembali Ke Halaman Link</a>
+
+data heading
+<h1>Heading 1 menggunakan H1</h1>
+<h2>Heading 2 menggunakan H2</h2>
+<h3>Heading 3 menggunakan H3</h3>
+<h4>Heading 4 menggunakan H4</h4>
+<h5>Heading 5 menggunakan H5</h5>
+<h6>Heading 6 menggunakan H6</h6>
+
+
+
+draw io online / sketsa
+----
+https://app.diagrams.net/
+
+
+belajar list dan list nested
+----
+<h3>Yang harus dilakukan hari ini</h3>
+<!-- ordered list -->
+<ol>
+    <!-- nested list -->
+    <li>Diam di Rumah
+        <ul>
+            <li>Santai</li>
+            <li>Belajar</li>
+            <li>Nonton TV
+                <ol>
+                    <li>Netflix</li>
+                    <li>Youtube</li>
+                    <li>TV Kabel</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <!-- batas nested list -->
+    <li>Belajar HTML</li>
+    <li>Mengerjakan Tugas Praktikum</li>
+</ol>
+
+<h3>Hobi kesukaan diri kita</h3>
+<!-- unordered list -->
+<ul>
+    <li>Bermain Kelereng</li>
+    <li>Memancing Ikan</li>
+    <li>Belajar Ngoding</li>
+</ul>
+
+
+belajar div
+-----
+
+
+belajar form
+-----
+<form>
+  <div class="form-group">
+    <label for="">Nama Lengkap</label>
+    <input type="text" placeholder="Isikan Nama Anda" required />
+  </div>
+  <div class="form-group">
+    <label for="">Tanggal Lahir</label>
+    <input type="date" placeholder="Isikan Tanggal Lahir Anda" required />
+  </div>
+  <div class="form-group">
+    <label for="">Jenis Kelamin</label>
+    <select name="" id="" required>
+      <option value="" selected disabled>Pilih Jenis Kelamin</option>
+      <option value="">Laki-laki</option>
+      <option value="">Perempuan</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="">Alamat</label>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Isikan Alamat Lengkap Anda" required></textarea>
+  </div>
+  <div class="form-group">
+    <button type="reset">Reset Data</button>
+    <button type="submit">Simpan Data</button>
+  </div>
+</form>
+
+jika ingin load cdn bootstrap untuk template
+------
+https://getbootstrap.com/docs/4.3/getting-started/introduction/
+
+
+belajar tabel
+----
+<!-- tabel biodata 1 -->
+ <table border="1">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Andi</td>
+            <td>Jl. Sudirman</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Arif</td>
+            <td>Jl. Jendral</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Rendi</td>
+            <td>Jl. Sukun</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total Data : 2</td>
+        </tr>
+    </tfoot>
+ </table>
+ 
+ <!-- tabel biodata 2 -->
+ <table border="1">
+    <thead>
+        <tr>
+            <td rowspan="2">No</td>
+            <td colspan="2">Jenis Kelamin</td>
+            <td rowspan="2">Nama</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>P</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>L</td>
+            <td></td>
+            <td>Hacktiv8</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td>P</td>
+            <td>Gita</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>L</td>
+            <td></td>
+            <td>Arif</td>
+        </tr>
+    </tbody>
+ </table>

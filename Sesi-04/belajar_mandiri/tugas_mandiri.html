@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Menghitung Keliling & Luas Lingkaran </title>
+    </head>
+    <body>
+        <!--
+            Alur:
+            1. Membuat judul sebagai header
+            2. Input nilai jari-jari (var r) dan nilai phi (var phi) -> wajib 3.14
+            3. Jika memilih menghitung keliling lingkaran maka menggunakan rumus keliling lingkaran -> 3.14 x 2 x jari-jari
+            4. Jika memilih menghitung luas lingkaran maka menggunakan rumus luas lingkaran -> 3.14 x jari-jari x jari-jari
+            5. Output hasil keliling atau luas lingkaran
+
+            Pseudocode:
+            phi -> 3.14
+            input -> r
+            K -> 2 * phi * r
+            L -> phi * r * r
+            output -> K & L
+        -->
+        
+        <!--- Dibuat Oleh Nur Widya Anisa Muslim -->
+        <h1> Menghitung Keliling & Luas Lingkaran </h1> <!--membuat judul-->
+        <p> Silahkan klik button untuk menghitung keliling dan luas lingkaran</p>
+        
+        <button onclick="myFunctionK()">Menghitung Keliling</button> <!--button untuk menghitung keliling-->
+
+        <button onclick="myFunctionL()">Menghitung Luas</button> <!--button untuk menghitung luas-->
+        
+        <script>
+            let K,L,r; 
+            phi = 3.14;
+
+            function myFunctionK() {    
+            r = window.prompt ('Silahkan masukkan nilai jari-jarinya:', 0);
+            K = 2 * phi * r;
+            window.alert('Nilai keliling lingkaran ' + K );
+            }
+
+            function myFunctionL() {    
+            r = window.prompt ('Silahkan masukkan nilai jari-jarinya:', 0);
+            L = phi * r * r;
+            window.alert('Nilai luas lingkaran ' + L );
+            }
+        </script>
+    </body>
+</html>
