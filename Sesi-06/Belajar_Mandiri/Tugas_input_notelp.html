@@ -17,22 +17,10 @@
     <h3>Aplikasi Input No Telp</h3>
     <hr />    
 
-    
     <form action="">
-      <label for="no_telp">No Telp</label>
-
-      
-      <input type="number" />
-      <button>Submit</button>
+    <label for="no_telp">No Telp</label>
+    <input type="number" onkeyup="this.value=this.value.replace(/[^\d]/,'')" />
+    <button>Submit</button>
     </form>
-    
-    function validation(){
-        var validasiAngka = /^[0-9]+$/;
-        var no_telp = document.getElementById("nomor");at wajib angka!");
-            tahunLahir.value="";
-            tahunLahir.focus();
-            return false;
-        }
-      }
   </body>
 </html>
